@@ -1,0 +1,56 @@
+.profile__title {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 4px solid black;
+    padding: 20px 40px 14px;
+    position: relative;
+  }
+  
+  .profile__title::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 25px;
+    background-color: #ffff00;
+    width: 60px;
+    height: 45px;
+    z-index: -1;
+  }
+
+.empty__message {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px 40px 14px;
+    position: relative;
+}
+
+@media (width <= 1440px) {
+    .empty__message {
+        font-size: 30px;
+    }
+
+    .profile__title {
+        font-size: 40px;
+    }
+    
+    .profile__title::before {
+        width: 55px;
+        height: 42px;
+    }
+}
+
+@media (width <= 650px) {
+    .empty__message {
+        padding: 20px 14px 14px;
+    }
+
+    .profile__title {
+        padding: 20px 14px 14px;
+    }
+    
+    .profile__title::before {
+        left: 6px;
+    }
+}
